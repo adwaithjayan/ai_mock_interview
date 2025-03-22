@@ -1,7 +1,14 @@
 import React from 'react'
+import Agent from "@/components/agent";
 
 export default function Page() {
       return (
-          <div>Page</div>
+          <>
+                <h3>Interview generation</h3>
+
+                <Agent
+                    userName="Adwaith"
+                />
+          </>
       )
 }

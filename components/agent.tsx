@@ -19,13 +19,8 @@ interface SavedMessage {
 }
 
 export default function Agent({
-  userName,
-  userId,
-  interviewId,
-  feedbackId,
-  type,
-  questions,
-}: AgentProps) {
+  userName
+}: { userName: string }) {
 
   const router = useRouter();
   const [callStatus, setCallStatus] = useState<CallStatus>(CallStatus.INACTIVE);
